@@ -7,6 +7,7 @@ int factorial(int n) {
 }
 
 int main() {
+    
     int N;
     cin >> N;
 
