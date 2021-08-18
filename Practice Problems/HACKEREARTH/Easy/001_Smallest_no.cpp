@@ -1,3 +1,12 @@
+/*
+* input no. of test cases
+* input length of a string
+* input string that consists of only 1,2,3
+* swap any two adj. characters only if abs. diff. b/w them is 1 ,i.e.,only '3,2' and '2,1' possible
+* all the 2s can come any where as it can be swapped with anyone
+* determine the smallest number that can be formed
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
