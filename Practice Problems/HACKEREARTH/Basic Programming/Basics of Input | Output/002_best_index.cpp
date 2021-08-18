@@ -1,41 +1,40 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int indexFinder(int x,int n){
-	int count=1;
-    while(x<=n){  
-      count++;
-      x=x+count;
-    }
-    x=x-count;
-    return x;
+long int indexFinder(int x,int n){ // find last possible index
+	long int temp = x;
+	long int count = 2;
+	
+	while(temp + count <= n){
+		temp += count;
+		count++;
+	}
+	return temp;
 }
 
 int main(){
+    long int n;
+    long int last = 0;
+    cin >> n;
 
-   int n;
-   cin>>n; // array size
-
-   int arr[n+1]={0};
-   int arrIndex[n+1]={0};
-   int sum[n+1]={0};
-   int finalArr[n+1]={0};
-
-   for(int i=1;i<=n;i++){
-      cin>>arr[i]; // array elements
-      arrIndex[i]=indexFinder(i,n); // array indices
-      sum[i]=arr[i]+sum[i-1] ; // array sum
+    long long int arr[n]
+, temp, sum = 0, max = -10000000;
+    arr[0] = 0; // using one indexing
+	
+    for(long int i = 1; i <= n; i++){
+	// we are using pre-computation technique, were each element stores the total till current element .
+	    cin >> temp;
+	    arr[i] = temp + arr[i - 1];
     }
-
-    int max=INT_MIN;
-
-    for(int i=1;i<=n;i++){
-       finalArr[i]=sum[arrIndex[i]]-sum[i-1] ;
-       if(finalArr[i]>max){
-          max=finalArr[i];
-        }
+	
+    for(long int i = 1; i < n; i++){
+	    last = indexFinder(i,n);
+	    sum = arr[last] - arr[i - 1];
+	    if(sum > max){
+		    max = sum;
+	    }
     }
-    cout<<max<<endl;
-
+    cout << max;
+    
     return 0;
 }
