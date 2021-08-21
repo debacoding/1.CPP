@@ -1,3 +1,4 @@
+[C++ tricks for competitive programming (for C++ 11) - GeeksforGeeks.pdf](https://github.com/debacoding/CPP/files/7025421/C%2B%2B.tricks.for.competitive.programming.for.C%2B%2B.11.-.GeeksforGeeks.pdf)
 # [Language Details](https://github.com/debacoding/CPP/tree/main/Language%20Details):
 1. [CPP Basics](https://github.com/debacoding/CPP/tree/main/Language%20Details/CPP%20Basics)
 2. [CPP STL](https://github.com/debacoding/CPP/tree/main/Language%20Details/CPP%20STL)
