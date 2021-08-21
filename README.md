@@ -1,4 +1,5 @@
-[C++ tricks for competitive programming (for C++ 11) - GeeksforGeeks.pdf](https://github.com/Mehulcoder/Coding-ninjas-competitive/blob/master/C%2B%2B%20tricks%20for%20competitive%20programming%20(for%20C%2B%2B%2011)%20-%20GeeksforGeeks.pdf)
+## [Tricks:](https://github.com/Mehulcoder/Coding-ninjas-competitive/blob/master/C%2B%2B%20tricks%20for%20competitive%20programming%20(for%20C%2B%2B%2011)%20-%20GeeksforGeeks.pdf)
+## [Basics + Advanced:](https://github.com/Vishal-raj-1/Beginner-CPP-Submissions/tree/master/Vishal) 
 
 
 # [Language Details](https://github.com/debacoding/CPP/tree/main/Language%20Details):
