@@ -1,35 +1,37 @@
 // { Driver Code Starts
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
  // } Driver Code Ends
-
-
 class Solution{
-    public:
-    int maxTripletSum(int arr[], int n)
+  public:
+    int thirdLargest(int a[], int n)
     {
-    	// Complete the function
-    	sort(arr,arr + n); // after sorting last three elements are largest
-    	int sum = arr[n - 1] + arr[n - 2] + arr[n - 3]; // sum of three largest elements is largest
-    	return sum;
+         //Your code here
+         sort(a,a + n);
+         
+         if(n < 3)
+            return -1;
+         else    
+            return a[n - 3]; // after sorting in asc order, 3rd largest is one third from end
     }
+
 };
 
 // { Driver Code Starts.
+ 
 int main()
 {
-	int t;
-	cin>>t;
-	while(t--)
-	{
-	    int n,i;
-	    cin>>n; int a[n];
-	    for(i=0;i<n;i++)
-	    cin>>a[i];
-	    Solution ob;
-	    cout <<ob.maxTripletSum(a, n);
-	    cout<<"\n";
-	}
-return 0;
-}  // } Driver Code Ends
+    int t;
+    cin>>t;
+    while(t--)
+    {
+	    int n;
+	    cin>>n;
+	    int a[n];
+	    for(int i=0;i<n;i++)
+	        cin>>a[i];
+	   Solution obj;
+	    cout<<obj.thirdLargest(a,n)<<endl;
+    }
+}   
